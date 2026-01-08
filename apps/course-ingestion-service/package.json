@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
+    "axios": "^1.13.2",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.45.1",
+    "node-cron": "^4.2.1",
     "postgres": "^3.4.8",
     "winston-loki": "^6.1.3"
   }

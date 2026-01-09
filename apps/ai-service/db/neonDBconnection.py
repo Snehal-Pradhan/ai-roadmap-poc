@@ -14,7 +14,7 @@ async def getCourses():
         print("NeonDB connection established")
 
         rows = await conn.fetch(
-            "SELECT course_code, course_name, course_provider FROM courses ORDER BY course_code;"
+            "SELECT id, course_name, course_provider FROM courses ORDER BY id;"
         )
         return rows
 

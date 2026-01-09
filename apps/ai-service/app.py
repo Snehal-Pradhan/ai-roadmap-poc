@@ -14,13 +14,13 @@ vector_buffer = []
 
 for course in courses:
     embed_batch.append({
-        "id": f"course:{course['course_code']}",
+        "id": f"course:{course['id']}",
         "text": (
             f"Course Name: {course['course_name']}\n"
             f"Provider: {course['course_provider']}"
         ),
         "metadata": {
-            "course_code": course["course_code"],
+            "id": course["id"],
             "course_name": course["course_name"],
             "course_provider": course["course_provider"]
         }

@@ -1,19 +1,60 @@
-import React from 'react'
+import Base from './Base'
+import BaseFocusLight from './BaseFocusLight'
 
 export default function page() {
   return (
-<div className="h-screen w-screen bg-slate-800 p-10 flex items-center justify-center">
-  <div className="transform scale-40 origin-top-left flex flex-col">
-    <div className="flex translate-y-16">
-      <div className="h-24 w-20 bg-gradient-to-t from-green-500/50 via-slate-700/50 to-transparent -skew-y-12 translate-y-4"></div>
-      <div className="h-24 w-20 bg-gradient-to-t from-green-500/50 via-slate-700/50 to-transparent skew-y-12 translate-y-4"></div>
+    <div className="min-h-screen w-screen bg-white flex flex-col items-center justify-center py-20 overflow-x-hidden"> 
+      <div className="flex flex-col items-center">
+        <div className='m-5 h-20 -translate-x-20'>
+          <div>
+          <Base scale={0.5} color="slate" />
+        </div>
+        </div>
+        <div className='m-5 h-20 '>
+          <div>
+          <Base scale={0.5} color="slate" />
+        </div>
+        </div>
+        <div className='m-5 h-20 translate-x-20'>
+          <div>
+          <Base scale={0.5} color="slate" />
+        </div>
+        </div>
+        <div className='m-5 h-20 '>
+          <div>
+          <Base scale={0.5} color="blue" />
+          <div className='-translate-y-44'>
+            <BaseFocusLight scale={1} color='blue'/>
+          </div>
+        </div>
+        </div>
+        <div className='m-5 -translate-x-20'>
+          <div>
+          <Base scale={0.5} color="blue" />
+        </div>
+        </div>
+        <div className='m-5'>
+          <div>
+          <Base scale={0.5} color="blue" />
+        </div>
+        </div>
+        <div className='m-5 translate-x-20'>
+          <div>
+          <Base scale={0.5} color="blue" />
+        </div>
+        </div>
+        <div className='m-5'>
+          <div>
+          <Base scale={0.5} color="blue" />
+        </div>
+        </div>
+        <div className='m-5 -translate-x-20'>
+          <div>
+          <Base scale={0.5} color="blue" />
+        </div>
+        </div>
+    </div>
     </div>
 
-    <div className="flex">
-      <div className="h-24 w-20 bg-gradient-to-t from-green-500/70 via-slate-700/30 to-transparent skew-y-12"></div>
-      <div className="h-24 w-20 bg-gradient-to-t from-green-500/70 via-slate-700/30 to-transparent -skew-y-12"></div>
-    </div>
-  </div>
-</div>
   )
 }
